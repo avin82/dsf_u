@@ -1,0 +1,4 @@
+Python Software Foundation
+The mission of the Python Software Foundation is to promote, protect, 
+and advance the Python programming language, and to support and 
+facilitate the growth of a diverse and international community of Python programmers.
