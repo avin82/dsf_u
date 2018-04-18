@@ -22,9 +22,9 @@ print(countries[0])
 print(countries[3])
 
 print(countries[0:3])
-print (countries[:3])
-print (countries[17:])
-print (countries[:])
+print(countries[:3])
+print(countries[17:])
+print(countries[:])
 
 print(countries.dtype)
 print(employment.dtype)
