@@ -9,7 +9,7 @@ NumPy arrays have a dtype which is the type of each element in the array. Now th
 """
 
 
-print np.array([1, 2, 3, 4, 5]).dtype
+print np.array([1, 2, 3, 4, 5]).dtype  # run the script with python 2.7 to get appropriate results
 
 enrollments = np.array([
                     ['account_key', 'status', 'join_date', 'days_to_cancel',    'is_udacity'],
