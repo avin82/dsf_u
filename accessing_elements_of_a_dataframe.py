@@ -1,5 +1,6 @@
 import pandas as pd
 
+# run the script with python 2.7 to get appropriate results
 ridership_df = pd.DataFrame({
     'R003': [0, 1478, 1613, 1560, 1608, 1576, 95, 2, 1438, 1342],
     'R004': [0, 3877, 4088, 3392, 4802, 3933, 229, 0, 3785, 4043],
