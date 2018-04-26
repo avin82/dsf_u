@@ -11,22 +11,22 @@ df = pd.DataFrame({
     3: [130, 140, 150, 160]
 })
 
-print(df, end='\n')
-print(df + s, end='\n')
+print(df)
+print(df + s)
 
 # Adding a Series to a one-row DataFrame
 s = pd.Series([1, 2, 3, 4])
 df = pd.DataFrame({0: [10], 1: [20], 2: [30], 3: [40]})
 
-print(df, end='\n')
-print(df + s, end='\n')
+print(df)
+print(df + s)
 
 # Adding a Series to a one-column DataFrame
 s = pd.Series([1, 2, 3, 4])
 df = pd.DataFrame({0: [10, 20, 30, 40]})
 
-print(df, end='\n')
-print(df + s, end='\n')
+print(df)
+print(df + s)
 
 # Adding when DataFrame column names match Series index
 s = pd.Series([1, 2, 3, 4], index=['a', 'b', 'c', 'd'])
@@ -37,8 +37,8 @@ df = pd.DataFrame({
     'd': [130, 140, 150, 160]
 })
 
-print(df, end='\n')
-print(df + s, end='\n')
+print(df)
+print(df + s)
 
 # Adding when DataFrame column names don't match Series index
 s = pd.Series([1, 2, 3, 4])
@@ -49,5 +49,5 @@ df = pd.DataFrame({
     'd': [130, 140, 150, 160]
 })
 
-print(df, end='\n')
-print(df + s, '\n')
+print(df)
+print(df + s)
