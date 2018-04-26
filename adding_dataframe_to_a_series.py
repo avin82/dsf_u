@@ -1,7 +1,5 @@
 import pandas as pd
 
-# Change False to True for each block of code to see what it does
-
 # Adding a Series to a square DataFrame
 s = pd.Series([1, 2, 3, 4])
 df = pd.DataFrame({
