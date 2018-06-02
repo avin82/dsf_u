@@ -6,14 +6,14 @@ rep id for all stores except Walmart, Target, and Nordstrom.
 
 2. Use the web_events table to find all information regarding individuals
 who were contacted via any method except using organic or adwords
-methods. Use the accounts table to find:
+methods.
 
-3. All the companies whose names do not start with 'C'.
+3. Use the accounts table to find all the companies whose names do not start with 'C'.
 
-4. All companies whose names do not contain the string 'one' somewhere in
+4. Use the accounts table to find all companies whose names do not contain the string 'one' somewhere in
 the name.
 
-5. All companies whose names do not end with 's'.
+5. Use the accounts table to find all companies whose names do not end with 's'.
 */
 
 SELECT name, primary_poc, sales_rep_id
