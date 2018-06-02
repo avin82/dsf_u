@@ -3,10 +3,10 @@
 /*
 Write a query that
 
-Pull the first 5 rows and all columns from the orders table that have a
+1. Pull the first 5 rows and all columns from the orders table that have a
 dollar amount of gloss_amt_usd greater than or equal to 1000.
 
-Pull the first 10 rows and all columns from the orders table that have a
+2. Pull the first 10 rows and all columns from the orders table that have a
 total_amt_usd less than 500.
 */
 
