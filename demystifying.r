@@ -1,4 +1,4 @@
-# The goal of files, like this one, is to introduce you to the
+# The goal of this file is to introduce you to the
 # R programming language. Let's start with by unraveling a
 # little mystery!
 
@@ -12,18 +12,32 @@ udacious <- c("Chris Saden", "Lauren Castellano",
               "Kunal Chawla")
 
 # You should see something like "chr[1:7]" in the 'Environment'
-# or 'Workspace' tab. This is because you created a vector with
-# 7 names that have a type of character (strings). The arrow-like
+# or 'Workspace' tab. This is because you created a 'vector' with
+# 7 names that have a 'type' of character. The arrow-like
 # '<-' symbol is the assignment operator in R, similar to the
 # equal sign '=' in other programming languages. The c() is a
 # generic function that combines arguments, in this case the
 # names of people, to form a vector.
 
-# A vector is one of the data types in R. Vectors must contain
+# A 'vector' is one of the data types in R. Vectors must contain
 # the same type of data, that is the entries must all be of the
-# same type: character, logical (TRUE or FALSE), or numeric.
+# same type: character (most programmers call these strings),
+# logical (TRUE or FALSE), or numeric.
 
-# HELPFUL TIP: You can add values to a vector.
+# Print out the vector udacious by running this next line of code.
+
+udacious
+
+# Notice how there are numbers next to the output.
+# Each number corresponds to the index of the entry in the vector.
+# Chris Saden is the first entry so [1]
+# Dean Eckles is the fourth entry so [4]
+# Kunal Chawla is the seventh entry so [7]
+
+# Depending on the size of you window you may see different numbers
+# in the output.
+
+# ANOTHER HELPFUL TIP: You can add values to a vector.
 # Run each line of code one at a time below to see what is happening.
 
 numbers <- c(1:10)
@@ -41,7 +55,7 @@ numbers
 udacious <- c("Chris Saden", "Lauren Castellano",
               "Sarah Spikes","Dean Eckles",
               "Andy Brown", "Moira Burke",
-              "Kunal Chawla", YOUR_NAME)
+              "Kunal Chawla", "Arvind Sharma")
 
 # Notice how R updates 'udacious' in the workspace.
 # It should now say something like 'chr[1:8]'.
@@ -70,16 +84,19 @@ mystery
 mystery == 11
 
 # Here we get a logical (or boolean) vector that tells us
-# at what locations or indices in the vector where the number
-# of characters for the name is equal to 11.
+# which locations or indices in the vector contain a name
+# that has exactly 11 characters.
 
 # 5. Let's use this boolean vector, mystery, to subset our
 # udacious vector. What do you think the result will be when
 # running the line of code below?
 
 # Think about the output before you run this next line of code.
+# Notice how there are brackets in the code. Brackets are often
+# used in R for subsetting.
 
 udacious[mystery == 11]
+
 
 # Scroll down for the answer
 
@@ -100,15 +117,31 @@ udacious[mystery == 11]
 
 
 
-# 6. Alright, all mystery aside...let's dive into some data! Run
-# this next command to load the mtcars data.
+# 6. Alright, all mystery aside...let's dive into some data!
+# The R installation has a few datasets already built into it
+# that you can play with. Right now, you'll load one of these,
+# which is named mtcars.
+
+# Run this next command to load the mtcars data.
 
 data(mtcars)
 
-# You should see mtcars appear in the 'Environment' tab.
+
+# You should see mtcars appear in the 'Environment' tab with
+# <Promise> listed next to it. 
+
+# The object (mtcars) appears as a 'Promise' object in the
+# workspace until we run some code that uses the object.
+
 # R has stored the mtcars data into a spreadsheet-like object
 # called a data frame. Run the next command to see what variables
-# are in the data set.
+# are in the data set and to fully load the data set as an
+# object in R. You should see <Promise> disappear when you
+# run the next line of code.
+
+# Visit http://cran.r-project.org/doc/manuals/r-release/R-lang.html#Promise-objects
+# if you want the expert insight on Promise objects. You won't
+# need to the info on Promise objects to be successful in this course.
 
 names(mtcars)
 
@@ -161,11 +194,17 @@ dim(mtcars)
 
 
 # The second command, dim(mtcars), should output '[1] 32 11'
-# to the console. Don't worry about the [1].
-# I'll explain that later.
+# to the console. The [1] indicates that 32 is the first value
+# in the output.
+
+# R uses 1 to start indexing (AND NOT ZERO BASED INDEXING as is true
+# of many other programming languages.)
 
 # 10. Read the documentation for row.names if you're want to know more.
 ?row.names
+
+# Run this code to see the current row names in the data frame.
+row.names(mtcars)
 
 # Run this code to change the row names of the cars to numbers.
 row.names(mtcars) <- c(1:32)
@@ -179,7 +218,7 @@ mtcars
 data(mtcars)
 head(mtcars, 10)
 
-# The head() fucntion prints out the first six rows of a data frame
+# The head() function prints out the first six rows of a data frame
 # by default. Run the code below to see.
 head(mtcars)
 
